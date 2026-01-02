@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Mic, User, ArrowRight, ShieldCheck } from "lucide-react";
+import { User, ArrowRight, ShieldCheck } from "lucide-react"; // Removed duplicate imports
 import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
 
@@ -68,12 +68,9 @@ export default function HeroSection() {
             </span>
           </motion.h1>
 
-
-
           {/* Description */}
           <motion.p 
             variants={itemVariants}
-            // smaller on all screens
             className="text-gray-400 text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
             Access capital without traditional credit scores. 
             <br></br>We use <span className="text-white font-medium">Blockchain & AI</span> to help underserved individuals build true financial freedom.
@@ -84,6 +81,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
+            {/* 1. BORROWER VIEW */}
             {role === "borrower" && (
               <>
                 <Link to="/trustscore">
@@ -104,6 +102,7 @@ export default function HeroSection() {
               </>
             )}
 
+            {/* 2. LENDER VIEW */}
             {role === "lender" && (
               <>
                 <Link to="/lender/dashboard">
@@ -124,9 +123,14 @@ export default function HeroSection() {
               </>
             )}
             
-            {/* Fallback if no role found (Optional) */}
+            {/* 3. NEW USER VIEW (No Role Set) - Shows Launch Dashboard by Default */}
             {!role && (
-                 <div className="h-14 w-full animate-pulse bg-white/5 rounded-full max-w-xs"></div>
+                 <Link to="/auth">
+                    <Button className="relative z-50 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-full px-8 py-6 text-lg shadow-lg shadow-blue-900/20 transition-transform hover:scale-105 poppins-regular">
+                      Launch Dashboard
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                 </Link>
             )}
           </motion.div>
 
@@ -141,7 +145,6 @@ export default function HeroSection() {
                   key={i}
                   className="w-10 h-10 rounded-full border-2 border-black bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center relative overflow-hidden"
                 >
-                   {/* Simulating avatars with gradients */}
                    <div className={`absolute inset-0 opacity-80 ${
                        i % 2 === 0 ? 'bg-purple-500' : 'bg-blue-500'
                    } mix-blend-overlay`}></div>
