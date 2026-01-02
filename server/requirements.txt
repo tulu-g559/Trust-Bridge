@@ -1,0 +1,11 @@
+flask
+flask-cors
+firebase
+firebase-admin
+python-dotenv
+google-generativeai
+python-dateutil
+Werkzeug
+base64
+cloudinary
+gunicorn
