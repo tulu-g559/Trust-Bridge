@@ -65,6 +65,13 @@ Millions remain unbanked due to lack of credit history. TrustBridge empowers the
 
 ---
 
+## 📸 Screenshots  
+
+| **Home Page** | **Dashboard** | **Trust Score Calculation** | **Profile** |
+|:------------:|:------------:|:------------:|:------------:|
+| ![Home](https://github.com/user-attachments/assets/559d0609-a958-4f58-ae53-caec6729e133) | ![Dashboard](https://github.com/user-attachments/assets/d5ffff21-d624-40a1-92b4-f61798fbbb41) | ![Trust Score Calculation](https://github.com/user-attachments/assets/2421ad54-1b96-4409-a11a-f7d51db0d6ad) | ![Dashboard](https://github.com/user-attachments/assets/dce9cef9-7f70-4699-a723-58a331b48e94)
+
+
 ## 🔒 Privacy & Security
 
 - 🔐 KYC and loan data stored in Firestore (not on-chain)
@@ -151,4 +158,4 @@ lenders/
 
 - 📧 Email: [Arnab Ghosh](garnab559@gmail.com)
 - 💬 Discord: *Coming Soon*
-- 🛠 GitHub: [TrustBridge](https://github.com/tulu-g559/TrustBridge)
+- 🛠 GitHub: [Trust-Bridge](https://github.com/tulu-g559/Trust-Bridge)
