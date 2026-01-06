@@ -1,24 +1,36 @@
-# 🌉 TrustBridge
-
-**TrustBridge** is a decentralized, AI-powered microloan platform designed to bring financial access to underserved individuals—no traditional credit scores needed.
+# TrustBridge
+**Reimagining Trust. Unlocking Opportunities.**
+*A decentralized, AI-powered lending protocol bridging the gap between underserved borrowers and global liquidity.*
 
 ---
 
 ## 🚀 What is TrustBridge?
 
-TrustBridge enables peer-to-peer microloans using alternative financial data. Users without formal credit histories can upload everyday documents (like utility bills or tax receipts), which are analyzed by AI to produce a **TrustScore**. Loans are funded transparently via Ethereum wallets.
+TrustBridge is a **P2P micro-lending platform** that eliminates the need for traditional credit scores. By leveraging **Generative AI (Gemini)** for alternative data analysis and **Ethereum Smart Contracts** for settlement, we create verifiable on-chain reputations (**TrustScores**) from off-chain real-world assets (utility bills, tax returns, government IDs).
+
+We empower individuals to own their financial identity and provide lenders with transparent, high-yield opportunities in a permissionless environment.
 
 ---
 
-## 🌍 Why TrustBridge?
+## 🌍 Core Ecosystem
 
-Millions remain unbanked due to lack of credit history. TrustBridge empowers them using:
+Traditional banking excludes millions due to lack of formal credit history. TrustBridge solves the trilemma of **Identity, Trust, and Access**:
 
-- ✅ AI-based document analysis (ITR, bills, rent)
-- ✅ Decentralized identity (Ethereum + Wagmi wallet)
-- ✅ Peer-to-peer lending transparency
-- ✅ TrustScore for fairness & accountability
+### 🤖 1. AI-Native Verification
+* **Document Vision:** Uses `Gemini 1.5 Flash` to extract financial health indicators from non-standard documents (ITR, Gas/Electricity Bills, Rent Receipts).
+* **Biometric Liveness:** Compares live camera selfies with government ID (PAN/Aadhaar) to prevent fraud using advanced computer vision.
 
+### ⛓️ 2. Decentralized Settlement
+* **Smart Contract Escrow:** Loans are requested, funded, and repaid directly on the **Sepolia Testnet**, ensuring immutability.
+* **Web3 Integration:** Seamless wallet connection via **Wagmi + RainbowKit** creates a frictionless "Login with Ethereum" experience.
+
+### 📊 3. The TrustScore Protocol
+* **Dynamic Reputation:** A 0-100 score calculated in real-time based on verified identity (+15 pts), financial doc validity (+60 pts), and on-chain repayment history (+25 pts).
+* **Portable Identity:** Your score lives on-chain, allowing you to carry your reputation across the DeFi ecosystem.
+
+### 🔐 4. Enterprise-Grade Security
+* **Hybrid RBAC:** Strict separation between **Borrower** (Request/Repay) and **Lender** (Invest/Track) dashboards using Firebase Auth + Custom Claims.
+* **Secure Storage:** Sensitive PII is encrypted and stored off-chain (Cloudinary/Firestore), while only transaction hashes and scores are committed to the blockchain.
 ---
 
 ## 🛠 Tech Stack
@@ -34,7 +46,7 @@ Millions remain unbanked due to lack of credit history. TrustBridge empowers the
 
 ### ⚙️ AI Integration
 - Gemini Vision – document parsing
-- Gemini Pro – TrustScore computation
+- Gemini 2.5 Flash – TrustScore computation
 
 ### ⚙️ Blockchain
 - Ethereum Sepolia Testnet
@@ -157,5 +169,6 @@ lenders/
 ## 📮 Contact
 
 - 📧 Email: [Arnab Ghosh](garnab559@gmail.com)
-- 💬 Discord: *Coming Soon*
+- 🤝 LinkdIn: [Arnab Ghosh](https://www.linkedin.com/in/arnab-g)
 - 🛠 GitHub: [Trust-Bridge](https://github.com/tulu-g559/Trust-Bridge)
+- 💬 Discord: *Coming Soon*
