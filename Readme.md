@@ -13,7 +13,7 @@
 
 ## 🚀 What is TrustBridge?
 
-TrustBridge is a **P2P micro-lending platform** that eliminates the need for traditional credit scores. By leveraging **Generative AI (Gemini)** for alternative data analysis and **Ethereum Smart Contracts** for settlement, we create verifiable on-chain reputations (**TrustScores**) from off-chain real-world assets (utility bills, tax returns, government IDs).
+TrustBridge is a **P2P micro-lending platform** that eliminates the need for traditional credit scores. By leveraging **Generative AI (Gemini)** for alternative data analysis and **Web3** for settlement, we create verifiable on-chain reputations (**TrustScores**) from off-chain real-world assets (utility bills, tax returns, government IDs).
 
 We empower individuals to own their financial identity and provide lenders with transparent, high-yield opportunities in a permissionless environment.
 
