@@ -1,8 +1,10 @@
 # TrustBridge
 
 ![Frontend](https://img.shields.io/badge/Frontend-React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
 ![Backend](https://img.shields.io/badge/Backend-Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Auth_&_DB-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
 ![Web3](https://img.shields.io/badge/Wallet-Wagmi_%2B_Viem-36B37E?style=for-the-badge&logo=ethereum&logoColor=white)
 ![AI](https://img.shields.io/badge/AI-Gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
 
