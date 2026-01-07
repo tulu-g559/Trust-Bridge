@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   UploadCloud, 
-  FileCheck2, 
   Loader2, 
   ShieldCheck, 
   ScanLine, 
@@ -11,7 +10,8 @@ import {
   CheckCircle2,
   AlertCircle,
   FileText,
-  X
+  X,
+  Database
 } from "lucide-react";
 import { toast } from "react-toastify";
 import { auth } from "../firebase";
@@ -226,10 +226,16 @@ export default function TrustScore() {
                 >
                     {/* Step 1: Identity */}
                     <motion.div variants={itemVariants} className={`bg-gray-900/40 backdrop-blur-xl border ${verified ? "border-green-500/30" : "border-white/10"} rounded-3xl p-8 relative overflow-hidden transition-all duration-500`}>
-                        <div className="flex items-center gap-3 mb-6">
+                        <div className="flex items-center gap-3 mb-2">
                             <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold ${verified ? "bg-green-500 text-black" : "bg-purple-600 text-white"}`}>1</div>
                             <h2 className="text-xl font-bold">Identity Verification</h2>
                             {verified && <span className="ml-auto text-green-400 flex items-center gap-1 text-sm"><CheckCircle2 size={16}/> Verified</span>}
+                        </div>
+
+                        {/* --- SIMULATION NOTICE --- */}
+                        <div className="mb-6 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-medium">
+                            <Database size={12} className="text-amber-400" />
+                            <span>Note: Verification uses a Simulated Government Database Integration</span>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4 mb-6">
